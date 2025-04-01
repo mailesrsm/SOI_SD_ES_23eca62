@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unique Values App</title>
+</head>
+<body>
+    <h1>Unique Values Display</h1>
+    <button onclick="showUniqueValues()">Show Unique Values</button>
+    <p id="output"></p>
+    
+    <script src="app.js"></script>
+    <script>
+        function showUniqueValues() {
+            document.getElementById("output").textContent = "Unique values: " + uniqueValues.join(", ");
+        }
+    </script>
+</body>
+</html>
